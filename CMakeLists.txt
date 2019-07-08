@@ -103,7 +103,7 @@ message(STATUS "Installation directory: ${mi_install_dir}")
 if(WIN32)
   list(APPEND mi_libraries psapi shell32 user32)
 else()
-  list(APPEND mi_libraries pthread)
+  list(APPEND mi_libraries pthread rt)
 endif()
 
 
